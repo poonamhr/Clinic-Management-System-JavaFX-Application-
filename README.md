@@ -39,18 +39,17 @@ The application is designed using a layered architecture inspired by the Modelâ€
 
 ## Objectives
 
-The primary aim of this project is to design and implement a reliable desktop application that demonstrates advanced programming concepts and structured software development practices. The system focuses on delivering both functional completeness and technical quality.
-
-More specifically, the objectives include:
-
-Developing a fully functional clinic management application using JavaFX
-Applying core OOP principles such as encapsulation, abstraction, and modular design
-Supporting management of patients, doctors, and appointments in an organized manner
-Implementing validation mechanisms to ensure data accuracy and consistency
-Preventing duplicate or conflicting appointment scheduling
-Ensuring persistent storage using file handling techniques (CSV-based approach)
-Providing a responsive and user-friendly interface with filtering and search capabilities
+The primary aim of this project is to design and implement a reliable desktop application that demonstrates advanced programming concepts and structured software development practices. The system focuses on delivering both functional completeness and technical quality. 
+More specifically, the objectives include: 
+- Developing a fully functional clinic management application using JavaFX
+- Applying core OOP principles such as encapsulation, abstraction, and modular design
+- Supporting management of patients, doctors, and appointments in an organized manner
+- Implementing validation mechanisms to ensure data accuracy and consistency
+- Preventing duplicate or conflicting appointment scheduling
+- Ensuring persistent storage using file handling techniques (CSV-based approach)
+- Providing a responsive and user-friendly interface with filtering and search capabilities
 These objectives collectively ensure that the system is both practical in real-world use and academically aligned with module requirements.
+
 ---
 
 ## Structure
