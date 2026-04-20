@@ -1,4 +1,3 @@
-# Clinic-Management-System-JavaFX-Application-
 # CN5004 – Advanced Programming
 
 ---
