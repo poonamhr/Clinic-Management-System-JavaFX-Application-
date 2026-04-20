@@ -1,0 +1,143 @@
+/*
+This file applies global font styling across the entire application.
+*/
+
+.root {
+    -fx-font-family: "Segoe UI";
+}
+
+/* Navigation  */
+.nav-btn {
+    -fx-background-color: transparent;
+    -fx-text-fill: white;
+    -fx-font-size: 16px;
+    -fx-padding: 8 18;
+}
+
+.nav-btn:hover {
+    -fx-text-fill: #00e6e6;
+    -fx-background-radius: 0;
+}
+
+/* Form input */
+.combo-box {
+    -fx-background-color: #D9D9D9;
+    -fx-text-fill: #333;
+    -fx-background-radius: 6;
+    -fx-padding: 6;
+}
+
+.combo-box .arrow-button {
+    -fx-background-color: #E0E0E0;
+}
+
+.combo-box:hover .arrow-button {
+    -fx-background-color: #C8C8C8;
+}
+
+.combo-box .arrow {
+    -fx-background-color: #333;
+}
+
+.combo-box-popup .list-view {
+    -fx-background-color: white;
+}
+
+.text-field {
+    -fx-background-radius: 6;
+    -fx-padding: 6;
+}
+
+/* Card components */
+.card {
+    -fx-background-color: white;
+    -fx-padding: 32;
+    -fx-background-radius: 10;
+    -fx-effect: dropshadow(gaussian, rgba(0, 0, 0, 0.25), 25, 0, 0, 8);
+    -fx-cursor: hand;
+    -fx-scale-x: 1;
+    -fx-scale-y: 1;
+    -fx-translate-y: 0;
+    -fx-transition: 0.35s ease;
+}
+
+.card:hover {
+    -fx-effect: dropshadow(gaussian, rgba(0, 0, 0, 0.45), 45, 0, 0, 12);
+}
+
+/* Buttons */
+.primary-btn {
+    -fx-background-color: #2D9CDB;
+    -fx-text-fill: white;
+    -fx-font-weight: bold;
+    -fx-padding: 10 30;
+    -fx-background-radius: 8;
+}
+
+.primary-btn:hover {
+    -fx-background-color: #1B7CB3;
+}
+
+.update-btn {
+    -fx-background-color: #27ae60;
+    -fx-text-fill: white;
+    -fx-font-weight: bold;
+    -fx-padding: 10 25;
+    -fx-background-radius: 8;
+}
+
+.update-btn:hover {
+    -fx-background-color: #1e874b;
+}
+
+.cancel-btn {
+    -fx-background-color: #e74c3c;
+    -fx-text-fill: white;
+    -fx-font-weight: bold;
+    -fx-padding: 10 25;
+    -fx-background-radius: 8;
+}
+
+.cancel-btn:hover {
+    -fx-background-color: #c0392b;
+}
+
+/* Table */
+.styled-table {
+    -fx-background-color: white;
+    -fx-border-color: #E0E0E0;
+    -fx-border-radius: 10;
+    -fx-background-radius: 10;
+    -fx-effect: dropshadow(gaussian, rgba(0, 0, 0, 0.25), 35, 0, 0, 8);
+}
+
+.styled-table:hover {
+    -fx-effect: dropshadow(gaussian, rgba(0, 0, 0, 0.45), 45, 0, 0, 12);
+}
+
+.styled-table .column-header-background {
+    -fx-background-color: #F2F2F2;
+}
+
+.styled-table .column-header,
+.styled-table .column-header .label {
+    -fx-text-fill: black;
+    -fx-font-weight: bold;
+    -fx-alignment: CENTER_LEFT;
+    -fx-text-alignment: left;
+}
+
+.styled-table .table-row-cell:hover {
+    -fx-background-color: #F7FBFF;
+}
+
+.styled-table .table-row-cell:selected {
+    -fx-background-color: #2D9CDB;
+}
+
+.styled-table .table-row-cell:selected .text,
+.styled-table .table-row-cell:selected .table-cell {
+    -fx-fill: white;
+    -fx-text-fill: white;
+}
+

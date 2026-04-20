@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.shape.Rectangle?>
+
+<!--
+Home view of the application.
+
+This FXML defines the landing dashboard, including:
+- Banner with welcome text
+- Basic UI layout
+- Quick access cards for exporting data
+
+The controller responsible for this view is:
+org.example.clinic.controllers.HomeController
+-->
+
+<BorderPane fx:id="root"
+            xmlns:fx="http://javafx.com/fxml"
+            fx:controller="org.example.clinic.controllers.HomeController">
+
+    <!-- Image banner section -->
+    <center>
+        <StackPane prefHeight="450" maxHeight="450" BorderPane.alignment="TOP_LEFT">
+
+            <ImageView fx:id="imageView"
+                       fitWidth="1150"
+                       fitHeight="450"
+                       StackPane.alignment="CENTER_LEFT"/>
+
+            <Rectangle width="1150" height="150"
+                       fill="linear-gradient(to bottom, transparent, white)"
+                       StackPane.alignment="BOTTOM_CENTER"/>
+
+            <VBox alignment="CENTER" spacing="10">
+
+                <Label fx:id="titleText"
+                       text="Welcome to the Clinic Management System"
+                       style="-fx-font-size: 36px; -fx-font-weight: bold; -fx-text-fill: #222;"/>
+
+                <Label fx:id="subtitleText"
+                       text="Manage doctors, patients, and appointments with ease"
+                       style="-fx-font-size: 20px; -fx-text-fill: #333;"/>
+            </VBox>
+
+        </StackPane>
+    </center>
+
+    <!-- Cards -->
+    <bottom>
+        <HBox fx:id="cardContainer"
+              spacing="25"
+              alignment="CENTER"
+              style="-fx-padding: 0 0 35 0; -fx-translate-y: -50;">
+
+            <!-- Doctors Card -->
+            <VBox alignment="CENTER" spacing="25" styleClass="card">
+                <Label text="Doctors"
+                       onMouseClicked="#exportDoctors"
+                       style="-fx-font-size: 22px; -fx-font-weight: bold; -fx-underline: true; -fx-cursor: hand;"/>
+                <Label text="View and manage registered doctors"/>
+            </VBox>
+
+            <!-- Patients Card -->
+            <VBox alignment="CENTER" spacing="25" styleClass="card">
+                <Label text="Patients"
+                       onMouseClicked="#exportPatients"
+                       style="-fx-font-size: 22px; -fx-font-weight: bold; -fx-underline: true; -fx-cursor: hand;"/>
+                <Label text="Keep track of patient records"/>
+            </VBox>
+
+            <!-- Appointments Card -->
+            <VBox alignment="CENTER" spacing="25" styleClass="card">
+                <Label text="Appointments"
+                       onMouseClicked="#exportAppointments"
+                       style="-fx-font-size: 22px; -fx-font-weight: bold; -fx-underline: true; -fx-cursor: hand;"/>
+                <Label text="Schedule and manage appointments"/>
+            </VBox>
+
+        </HBox>
+    </bottom>
+
+</BorderPane>

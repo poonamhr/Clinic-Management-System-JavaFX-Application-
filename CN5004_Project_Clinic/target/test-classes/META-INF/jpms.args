@@ -1,0 +1,4 @@
+--patch-module
+org.example.clinic=_
+--add-reads
+org.example.clinic=ALL-UNNAMED
